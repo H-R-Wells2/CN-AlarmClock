@@ -23,3 +23,6 @@ This project is a basic alarm clock web application that allows users to set ala
 2. Set an alarm by entering the desired time in the provided form and clicking the "Add Alarm" button.
 3. View the list of active alarms below the form.
 4. To delete an alarm, click the "Delete" button next to the corresponding alarm in the list.
+
+## Live Demo
+A live demo of the project is available [here](https://h-r-wells2.github.io/CN-AlarmClock/)

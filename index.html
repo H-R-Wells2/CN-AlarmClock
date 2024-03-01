@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome stylesheet for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -10,11 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Alarm Clock</title>
   </head>
   <body>
+    <!-- Main container for the alarm clock application -->
     <main class="justify-center items-center flex-col bg-blue-200 h-screen">
+      <!-- Clock display section -->
       <div class="py-10 flex justify-center items-center">
         <div
           class="bg-teal-400 px-2 py-6 rounded-lg text-6xl font-bold text-red-600 shadow-lg border-2 border-indigo-300"
@@ -22,11 +27,15 @@
           <div id="clock"></div>
         </div>
       </div>
+
+      <!-- Set Alarm Form -->
       <div class="flex justify-center items-center">
         <form
           class="bg-purple-400 p-5 rounded-xl w-1/2 flex-col justify-center items-center"
         >
           <p class="text-3xl font-semibold mb-3 text-center">Set Alarm</p>
+
+          <!-- Form inputs: Time input and Add Alarm button -->
           <div class="flex w-full">
             <input
               class="w-3/4 p-2 text-xl rounded-xl"
@@ -46,20 +55,38 @@
           </div>
         </form>
       </div>
+
+      <!-- Alarms List Section -->
       <div class="flex justify-center items-center pt-10">
         <div
           class="flex-col justify-center items-center w-1/2 bg-purple-400 rounded-xl"
         >
           <h3 class="text-2xl font-semibold text-center mt-3">Alarms</h3>
+
+          <!-- Container for the list of alarms -->
           <div class="flex-col justify-center items-center">
             <ul
               id="alarms_ul"
               class="flex-col justify-center items-center pb-3"
-            ></ul>
+            >
+              <!-- <li
+                class=""
+              >
+                <i class="fas fa-bell fa-lg"></i> 7 : 07 : 20 : P.M
+                <button
+                  type="submit"
+                  class="deleteAlarm flex w-1/4 rounded-xl bg-red-600 ml-2 items-center justify-center text-white gap-2 shadow-md hover:bg-red-500"
+                >
+                  Delete
+                </button>
+              </li> -->
+            </ul>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- JavaScript file for functionality -->
     <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
